@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='face.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body style="background-color: #fff;" id="home">
+<div class="container">
+<div class="nav">
+
+</div>
+<div class="sidenav">
+  <div class="list"> 
+  <i class="fa fa-sun-o"></i>
+  <a href="{{ url_for('home') }}">My Day</a>
+  </div>
+
+
+  <div class="list">
+   <i class="fa fa-laptop"></i>
+   <a href="{{ url_for('work') }}">Work</a>
+  </div>
+
+  <div class="list">
+   <i class="fa fa-graduation-cap"></i>
+   <a href="{{ url_for('school') }}">School</a>
+  </div>
+
+  <div class="list">
+  <i class="fa fa-users"></i>
+  <a href="{{ url_for('family') }}">Family</a>
+ </div>
+
+ <div class="list">
+  <i class="fa fa-plane"></i>
+  <a href="{{ url_for('destination') }}">Destinations</a>
+  </div>
+  <div class="list">
+  <i class="fa fa-compass"></i>
+  <a href="{{ url_for('adventure') }}">Adventure</a>
+ </div>
+  <div class="list">
+  <i class="fa fa-puzzle-piece"></i >
+  <a href="{{ url_for('wishes') }}">Wishes</a>
+ </div>
+ <div class="list">
+  <i class="fa fa-plus-circle"></i>
+  <a href="#">New List</a>
+ </div>
+ </div>
+
+<div class="col">
+<div id="todo" class="list"> 
+  <i id="day" class="fa fa-sun-o"></i>
+  <a  href="{{ url_for('home') }}">My Day</a>
+  </div>
+
+</div>
+<div class="head">
+<h2>My to do List</h2>
+</div>
+<hr>
+
+
+<div class="tabl">
+
+<table>
+
+
+  <tr>
+    <th>Date</th>
+    <th>Event</th>
+  </tr>
+
+  <tr>
+  	<td></td>
+  	<td></td>
+  </tr>
+
+   <tr>
+  	<td></td>
+  	<td></td>
+  </tr> 
+
+   <tr>
+  	<td></td>
+  	<td></td>
+  </tr> 
+
+   <tr>
+  	<td></td>
+  	<td></td>
+  </tr> 
+
+   <tr>
+  	<td></td>
+  	<td></td>
+  </tr> 
+
+   <tr>
+  	<td></td>
+  	<td></td>
+  </tr> 
+
+   <tr>
+  	<td></td>
+  	<td></td>
+  </tr>  
+</table>
+</div>
+</div>
+</body>
+</html>

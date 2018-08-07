@@ -1,0 +1,268 @@
+.form{margin-left:35%;
+      margin-top: 15%; 
+     }
+
+#home{background-color:#333;}
+
+.form label{font-family: georgia;
+            font-size: 14px;
+            margin-left: 5%;
+            color:cyan;
+            
+           }
+.form input{border-radius:5px;
+           padding: 5px;}
+
+#body{background:url(images/2.jpg)no-repeat;
+      background-position:fixed;
+      background-size: cover;
+      height: 100vh;
+  }
+.li{margin-left:30%;
+    color:cyan;
+   font-family: georgia;
+   font-size: 14px;}
+
+.box{ box-shadow:0px 0px 2px 2px #c0c0c0;
+     height: 100%;
+     padding: 10px;
+     width: 40%;
+     margin-left:28%;
+     border:0px 0px 2px 2px;
+     margin-top: 10%;
+
+
+    }
+
+  #login{margin-left: 57%;
+        border-radius: 5px;
+        background-color:#008080;
+        color:#fff;}
+
+#sub{margin-left:57%;            
+        border-radius: 5px;
+        background-color:#008080;
+        color:#fff;}  
+
+
+
+
+
+/* .sidenav {
+    height: 100%;
+    width: 160px;
+    margin-left:%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #444;
+    overflow-x: hidden;
+    box-shadow:0px 0px 2px 2px #a0fce7; 
+} */
+
+.sidenav  {
+    padding:22px 10px 6px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #008080;
+    display: block;
+    font-family: georgia;
+}
+/*.list a i{   padding:5px 10px 6px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #008080;
+    display: block;
+    font-family: georgia;}
+.list a{   padding:5px 10px 6px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #008080;
+    display: block;
+    font-family: georgia;}*/
+a{color: cyan;
+  padding: 5px 10px 6px;
+  list-style: none;
+  text-decoration: none;
+  padding-bottom: 20px;}
+
+i{color: cyan;
+ margin-top: 50px;}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.col{
+     left:50%;
+     background-color:teal;
+     }
+
+
+
+#todo{margin-left: 35%;
+      margin-bottom:20px;}
+
+
+.head h2{margin-left: 51%;
+        color:#fff;
+        font-family:georgia;
+        font-size: 16px;}
+
+
+table, th, td {
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+
+table{width:98%;
+      height:40px;}
+
+.tbl{margin-left:8%;}
+.tabl{margin-left: 15%;}
+
+td{height:30px;
+   text-align: left;}
+th{height: 100%;
+  text-align:center;
+  font-family: georgia;
+  color:teal;
+ font-size: 18px;}
+                                            
+
+.ball{
+    position: relative;
+    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue;right:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; right:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+}
+
+#one i{margin-left:45%;
+     color: red;}
+#two i{margin-left:90%;}
+
+.activity{margin-left:10%;
+         padding:5%;}
+.activity label{color: teal;
+                font-family: georgia;
+                font-size: 18px;
+               padding: 10px 10px;}
+
+.activity input{width:100%;
+               height: 30px;
+               margin-left:1%;
+              font-size: 14px;
+              font-family: georgia;
+             color: #000;}
+
+.activity textarea{width:100%;
+               height: 36px;
+               margin-left:1%;}
+
+.submit input{width:100%;
+               height: 30px;
+               margin-left:1%;
+              background-color: cyan;
+             color: #fff;
+             font-family: georgia;
+            font-size: 18px;}
+#edit{float: left 50%;top:20%;}
+#delete{float: left 50%;}
+
+/*get-started page*/
+#landing{background:url(images/2.jpg)no-repeat;
+      background-position:fixed;
+      background-size: cover;
+      height: 100vh;}
+
+#landing p{color:#fff;
+       margin-left:10%;
+       text-align: center;
+       font-size: 20px;
+       margin-top: 20%;} 
+
+#btn{margin-left:45%;
+     background-color:teal;
+     border-radius: 1px teal;}
+
+#get{margin-left: 49%;
+     padding-top:50px;
+     font-size: 24px;} 
+
+    /*end of get started*/
+
+.card{margin-left: 60%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      background-color: #fff;}
+
+.title{color: grey;
+       font-size: 16px;}
+
+.button{border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color:#fff;
+         background-color: #fff;
+        text-align: center;
+        width: 100px;
+        }  
+
+.card  a {text-decoration: none;
+          font-size: 22px;
+          color: #000;
+           margin: 30px 0;}
+
+.card img{width: 100%;
+          height: 50%;} 
+
+.dropbtn{background-color:teal;
+         color:#fff;
+         padding: 16px;
+         font-size: 16px;
+          border: none; }
+
+.dropbtn:hover, .dropbtn:focus{background-color: teal}
+#dropdown{position: relative;
+          display: inline-block;
+          margin-left: 60%;
+        }       
+
+#day{margin-left:26%;} 

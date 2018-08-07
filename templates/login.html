@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='inter.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="body">
+<div class="container-fluid">
+<form method="POST" action="/login">
+	<div style="background-color: teal" class="box">
+			<p style="color:cyan;margin-left:30%;font-size:20px;margin-top: 20px;">Login in to your Acccount!!</p>
+		<div style="margin-left:18%;"  class="form">
+			
+		<input  style="margin-bottom: 10px;width: 80%;border-radius: 10px;padding:10px;" placeholder="Username" type="text" name="Username">
+		<br>
+		
+		<input  style="margin-bottom: 10px;width: 80%;border-radius: 10px;padding: 10px;" placeholder="Password" type="text" name="Password">
+		</div>
+		<br>
+		<input  style="  width: 80%;border-radius: 10px;margin-left: 66px;padding: 10px;font-size: 20px;font-family: georgia;" id="sub" type="submit" value="Login" name="Login">
+		<br>
+		<p style="color: white;margin-left: 25%;">You don't have an account!?<a href="{{url_for('signup')}}">Signup</a></p>
+		</div>
+		</div>
+		</form>
+</div>
+</body>
+</html>
