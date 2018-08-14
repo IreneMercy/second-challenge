@@ -8,21 +8,21 @@
 </head>
 <body id="body">
 <div class="container-fluid">
-<form method="POST" action="/signup">
+<form method="POST" action="/signup_process">
 <div style="background-color: teal" class="box">
 		<p style="color:rgb(10, 234, 250);margin-left:28%;font-size:20px;margin-top:15px;">Register to create Acccount!!</p>
 <div style="margin-left:15%;"  class="form">
 
-<input style="margin-bottom:10px; width: 80%;border-radius: 10px;padding: 10px;" placeholder="Name" type="text" name="Last Name">
+<input style="margin-bottom:10px; width: 80%;border-radius: 10px;padding: 10px;" placeholder="Name" type="text" name="Name" required>
 <br>
 
-<input  style="margin-bottom:10px; width: 80%;border-radius: 10px;padding: 10px" placeholder="Email" type="text" name="Email">
+<input  style="margin-bottom:10px; width: 80%;border-radius: 10px;padding: 10px" placeholder="Email" type="email" name="Email" required>
 <br>
 
-<input  style="margin-bottom: 10px; width: 80%;border-radius: 10px;padding: 10px" placeholder="Username" type="text" name="Username">
+<input  style="margin-bottom: 10px; width: 80%;border-radius: 10px;padding: 10px" placeholder="Username" type="text" name="Username" required>
 <br>
 
-<input  style="width: 80%;border-radius: 10px;padding: 10px" placeholder="Password" type="text" name="Password">
+<input  style="width: 80%;border-radius: 10px;padding: 10px" placeholder="Password" type="password" name="Password" required>
 </div>
 <br>
 <input  style="width: 80%;border-radius: 10px;margin-left: 55px;padding: 10px;font-size: 20px;font-family: georgia;" id="sub" type="submit" name="submit">

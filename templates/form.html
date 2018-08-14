@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Our form will be here</h1>
+    <form method="POST" action="{{url_for('form')}}">
+        <!-- {{form.csrf_token}} -->
+        {{form.name}}
+        {{form.email}}
+        {{form.username}}
+        {{form.password}}
+    </form>
+</body>
+</html>

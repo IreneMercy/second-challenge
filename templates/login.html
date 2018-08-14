@@ -7,15 +7,15 @@
 </head>
 <body id="body">
 <div class="container-fluid">
-<form method="POST" action="/login">
+<form method="POST" action="/login_process">
 	<div style="background-color: teal" class="box">
 			<p style="color:cyan;margin-left:30%;font-size:20px;margin-top: 20px;">Login in to your Acccount!!</p>
 		<div style="margin-left:18%;"  class="form">
 			
-		<input  style="margin-bottom: 10px;width: 80%;border-radius: 10px;padding:10px;" placeholder="Username" type="text" name="Username">
+		<input  style="margin-bottom: 10px;width: 80%;border-radius: 10px;padding:10px;" placeholder="Username" type="text" name="Username" required>
 		<br>
 		
-		<input  style="margin-bottom: 10px;width: 80%;border-radius: 10px;padding: 10px;" placeholder="Password" type="text" name="Password">
+		<input  style="margin-bottom: 10px;width: 80%;border-radius: 10px;padding: 10px;" placeholder="Password" type="password" name="Password" required>
 		</div>
 		<br>
 		<input  style="  width: 80%;border-radius: 10px;margin-left: 66px;padding: 10px;font-size: 20px;font-family: georgia;" id="sub" type="submit" value="Login" name="Login">

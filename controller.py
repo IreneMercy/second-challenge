@@ -1,20 +1,46 @@
 from flask import Flask, render_template, url_for
-from flask import Flask, render_template, url_for
+from flask import request
 import user as userDetails
+user_credentials = {}
+
 app = Flask(__name__)
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login')
 def login():
-    user = userDetails
-    # if userDetails():
-        # return render_template('home.html', user=userDetails)
+    return render_template('login.html')
 
-    return render_template('login.html', user=userDetails)
-
+@app.route('/login_process', methods=['GET', 'POST'])
+def login_process():
+    username = request.values['Username']
+    password = request.values['Password']
+    if username in user_credentials.keys():
+        if password ==  user_credentials[username][2]:
+            return render_template('home.html')
+        else:
+            return render_template('login_failed.html')
+    else:
+        return render_template('not_found.html')
+ 
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
-    return render_template('signup.html', user=userDetails)
+    return render_template('signup.html' )
+
+@app.route('/signup_process', methods=['GET', 'POST'])
+def signup_process():
+    name = request.values['Name']
+    username = request.values['Username']
+    email = request.values['Email']
+    password = request.values['Password']
+
+    user_credentials[username] = (name, email, password)
+
+    return render_template('login.html')
+
+     
+
+
+
 
 @app.route('/home')
 def home():
